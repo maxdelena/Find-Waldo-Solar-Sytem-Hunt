@@ -52,7 +52,7 @@ class World {
         
                 if(this.currentPlanet != planet.name) {
                     this.state = World.PATHS
-                    console.log("aaa")
+                    
                     this.currentPlanet = planet.name
                     this.renderPaths(planet)
                 }

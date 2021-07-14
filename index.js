@@ -11,7 +11,7 @@ const decreaseLife = () => {
 
     updateLife(life - 1)
 
-    if(life == 0) {
+    if(life === 0) {
         showDialog("There's nothing here", "Restart", callback)
         console.log("Game Over")
     }
@@ -22,7 +22,7 @@ const resetLife = () => {
 }
 
 
-let planet1 = new Planet("Mercury", "planets/Mercury.svg", 500) 
+let planet1 = new Planet("Mercury", "planets/Mercury.svg", 150) 
 
 let path1 = new Path("Crater", Path.EMPTY)
 let path2 = new Path("Big Crater", Path.EMPTY)

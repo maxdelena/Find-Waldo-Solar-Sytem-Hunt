@@ -1,4 +1,3 @@
-
 class Path {
 
     static EMPTY = "empty"
@@ -46,10 +45,7 @@ class Planet {
             element.addEventListener("click", () => {
                 console.log("you clicked " + path.name)
                 console.log("path type " + path.type)
-
-                const callback = () => {
-                    console.log("hey i am a callback")
-                }
+                const callback = ("Good job") 
     
                 if(path.type == Path.DANGER) {
                     showDialog("You clicked a gangerous path. You lost a life!", "Alrighty Then", callback)
@@ -66,6 +62,7 @@ class Planet {
                 } if (life === 0) {
                     showDialog("Game Over!", callBack)
                     console.log("game Over")
+                    element.life.reload()
                 }
                     
     

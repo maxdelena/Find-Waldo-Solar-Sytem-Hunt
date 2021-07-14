@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 180vh;
     color:white;
     background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
